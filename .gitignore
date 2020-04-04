@@ -1,0 +1,10 @@
+# Node stuff
+node_modules/
+/dist/
+
+# Local private files
+.env
+
+# Miscellaneous
+.history/
+.vscode/
