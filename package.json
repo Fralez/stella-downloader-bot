@@ -1,0 +1,30 @@
+{
+  "name": "stella-downloader-bot",
+  "version": "1.0.0",
+  "description": "Stella's Telegram Bot to download music from Youtube.",
+  "main": "dist/main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "tslint": "^6.1.1",
+    "typescript": "^3.8.3"
+  },
+  "scripts": {
+    "start": "node dist/main.js",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "dev": "nodemon dist/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fralez/stella-downloader-bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fralez/stella-downloader-bot/issues"
+  },
+  "homepage": "https://github.com/Fralez/stella-downloader-bot#readme"
+}
