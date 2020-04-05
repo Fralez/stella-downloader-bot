@@ -1,5 +1,11 @@
-const world = '🗺️';
+"use strict";
 
-export function hello(word: string = world): string {
-  return `Hello ${world}! `;
-}
+import Telegraf from "telegraf";
+import { config } from "dotenv-safe";
+
+// Config .env variables into process.env
+config({
+  allowEmptyValues: true,
+});
+
+const bot = new Telegraf(process.env.BOT_TOKEN || "");

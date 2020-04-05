@@ -3,8 +3,16 @@
   "version": "1.0.0",
   "description": "Stella's Telegram Bot to download music from Youtube.",
   "main": "dist/main.js",
-  "dependencies": {},
+  "dependencies": {
+    "dotenv-safe": "^8.2.0",
+    "got": "^10.7.0",
+    "telegraf": "^3.37.0"
+  },
   "devDependencies": {
+    "@types/dotenv-safe": "^8.1.0",
+    "@types/got": "^9.6.9",
+    "@types/node": "^13.11.0",
+    "prettier": "2.0.2",
     "tslint": "^6.1.1",
     "typescript": "^3.8.3"
   },
