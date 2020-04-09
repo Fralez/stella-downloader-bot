@@ -32,8 +32,11 @@ export class Song implements ISong {
     this.bytesSize = song.bytesSize;
   }
 
-  public async download(): Promise<boolean> {
-    return false;
+  // WIP
+  public async download(): Promise<any> {
+    const response: AxiosResponse = await axios.get(
+      `${process.env.BASE_URL}/song/download?ytUrl=${this.url}&songTitle=${this.title}&artist=${this.artist}&imgUrl=${this.cover}`
+    );
   }
 }
 

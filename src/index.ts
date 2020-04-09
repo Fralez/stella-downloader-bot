@@ -11,9 +11,7 @@ config();
 const bot = new Telegraf(process.env.BOT_TOKEN || "");
 
 bot.on("message", async (ctx) => {
-  // "https://youtu.be/jAt9VZpMIyM"
-  const song: Song = await generateSong("https://youtu.be/jAt9VZpMIyM");
-  ctx.reply(song.url);
+  ctx.reply("Hello human! Meet my handsome creator: @fralezz");
 });
 
 bot.startPolling();
