@@ -4,9 +4,10 @@
   "description": "Stella's Telegram Bot to download music from Youtube.",
   "main": "dist/main.js",
   "dependencies": {
+    "axios": "^0.19.2",
     "dotenv-safe": "^8.2.0",
-    "got": "^10.7.0",
-    "telegraf": "^3.37.0"
+    "telegraf": "^3.37.0",
+    "telegraf-i18n": "^6.6.0"
   },
   "devDependencies": {
     "@types/dotenv-safe": "^8.1.0",
@@ -17,13 +18,13 @@
     "typescript": "^3.8.3"
   },
   "scripts": {
-    "start": "node dist/main.js",
+    "start": "node dist/index.js",
     "build": "tsc",
     "watch": "tsc -w",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
     "prepare": "npm run build",
-    "dev": "nodemon dist/main.js"
+    "dev": "nodemon dist/index.js"
   },
   "repository": {
     "type": "git",
