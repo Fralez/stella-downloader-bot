@@ -6,12 +6,14 @@
   "dependencies": {
     "axios": "^0.19.2",
     "dotenv-safe": "^8.2.0",
+    "i18n": "^0.8.6",
     "telegraf": "^3.37.0",
     "telegraf-i18n": "^6.6.0"
   },
   "devDependencies": {
     "@types/dotenv-safe": "^8.1.0",
     "@types/got": "^9.6.9",
+    "@types/i18n": "^0.8.6",
     "@types/node": "^13.11.0",
     "prettier": "2.0.2",
     "tslint": "^6.1.1",
