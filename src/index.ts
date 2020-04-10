@@ -14,8 +14,22 @@ i18n.configure({
 
 const bot = new Telegraf(process.env.BOT_TOKEN || "");
 
-bot.command(["start", "help"], ({ reply }) => {
-  return reply(i18n.__("purpose"));
+bot.command(["start"], ({ replyWithMarkdown }) => {
+  const replyOptions = Markup.inlineKeyboard([
+    Markup.callbackButton(i18n.__("how_works_q"), "how_works_q"),
+  ]).extra();
+  return replyWithMarkdown(i18n.__("purpose"), replyOptions);
+});
+
+bot.command(["help"], ({ replyWithMarkdown }) => {
+  const replyOptions = Markup.inlineKeyboard([
+    Markup.callbackButton("Next", "next"),
+  ]).extra();
+  return replyWithMarkdown(i18n.__("help"), replyOptions);
+});
+
+bot.action("how_works_q", ({ editMessageText, editMessageReplyMarkup, }) => {
+  return editMessageText(i18n.__("help"));
 });
 
 bot.startPolling();
