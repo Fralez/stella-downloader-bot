@@ -12,7 +12,6 @@
   },
   "devDependencies": {
     "@types/dotenv-safe": "^8.1.0",
-    "@types/got": "^9.6.9",
     "@types/i18n": "^0.8.6",
     "@types/node": "^13.11.0",
     "prettier": "2.0.2",
@@ -24,7 +23,6 @@
     "build": "tsc",
     "watch": "tsc -w",
     "format": "prettier --write \"src/**/*.ts\"",
-    "lint": "tslint -p tsconfig.json",
     "prepare": "npm run build",
     "dev": "nodemon dist/index.js"
   },
