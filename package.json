@@ -4,7 +4,7 @@
   "description": "Stella's Telegram Bot to download music from Youtube.",
   "main": "dist/main.js",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "dotenv-safe": "^8.2.0",
     "i18n": "^0.8.6",
     "telegraf": "^3.37.0",
